@@ -1,6 +1,7 @@
 set -e
 pkg install -y libjpeg-turbo clang python git libsodium freetype
-pip install --upgrade pip wheel
+pip install --upgrade pip
+pip install wheel
 LDFLAGS=" -lm" pip install pillow
 git clone https://github.com/NyanChanMeow/SSRSpeed && cd SSRSpeed
 pip install -r requirements.txt
