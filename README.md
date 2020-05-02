@@ -3,6 +3,6 @@
 pkg install -y wget && wget -O ssrspeed-install.sh https://raw.githubusercontent.com/w311ang/SSRSpeed-script/master/install.sh && bash ssrspeed-install.sh
 ```
 ## 注意
-由于Termux软件包特性，依赖包`libsodium`无`ldconfig`工具，无法通过`libsodium`安装检查，故需要使用将`--skip-requirements-check`内置的`./main.sh`或`./web.sh`
+由于Termux软件包特性，依赖包`libsodium`无`ldconfig`工具，无法通过依赖完整性检查，故需要使用将`--skip-requirements-check`内置的`./main.sh`或`./web.sh`
 ## 考古
 [原issue](https://github.com/NyanChanMeow/SSRSpeed/issues/108)
